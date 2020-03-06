@@ -15,6 +15,7 @@ func h(x *S) {
 
 
 //So you're confusing two concepts here. A pointer to a struct and a pointer to an interface are not the same.
+//TODO: LOOKS BOTH SAME , YET TO VERIFY
 func main() {
 	s :=S{}
 	p := &s
@@ -23,5 +24,6 @@ func main() {
 	f(p) //C
 	g(p) //D -> compile error
 	h(&s)
-	h(p)
+	h(s)//compile time error
+	
 }
