@@ -39,7 +39,7 @@ func InitIfacePointer() IF {
 
 func main() {
 	var s1=S{}
-	print(s1) // empty struct cannot print
+	print(s1) // empty struct cannot print for struct use the fmt.Print
 	//print(InitType())
 	println(InitPointer()) //returns address so nil
 	println(InitEfaceType() ) // return function , it will have address
