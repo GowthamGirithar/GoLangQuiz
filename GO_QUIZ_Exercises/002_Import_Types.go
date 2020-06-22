@@ -6,6 +6,8 @@ import cryptRand "crypto/rand"
 // . to use the method without package name in code
 import . "fmt"
 // we are not using and only for side effects
+//Can have n number of init function, order of execution is going to be order it encountered, we cannot call init
+//Why underscore in import , only side effect (init - funtion will be executed) and nothing else eg:load driver in sql
 import _ "github.com/go-sql-driver/mysql-master"
 func main() {
 
